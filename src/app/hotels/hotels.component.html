@@ -1,0 +1,26 @@
+<div class="container">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    (input)="filter()"
+    placeholder="Search..."
+  />
+  <table>
+    <thead>
+      <tr>
+        <th (click)="sort('HotelName')">hotel name</th>
+        <th (click)="sort('price')">price</th>
+        <th (click)="sort('locations')">Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of hotlist; track item) {
+      <tr>
+        <td>{{ item.HotelName }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.locations }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

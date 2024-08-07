@@ -1,0 +1,32 @@
+<div class="container">
+  <form class="form-control" action="">
+    <p class="title">hotel booking</p>
+    <div class="input-field">
+      <input required="" class="input" type="text" placeholder="name" />
+    </div>
+    <div class="input-field">
+      <input required="" class="input" type="email" placeholder="email" />
+    </div>
+    <div class="input-field">
+      <div class="date">
+        <label>from</label>
+        <input required="" class="input" type="date" />
+      </div>
+    </div>
+    <div class="input-field">
+      <div class="date">
+        <label>to</label>
+        <input required="" class="input" type="date" />
+      </div>
+    </div>
+    <label for="hotel">Choose hotel:</label>
+    <select name="hotel" id="hotel">
+      <optgroup label="choose from this hotels">
+        @for (item of hotlist; track item) {
+        <option>{{ item.HotelName }}</option>
+        }
+      </optgroup>
+    </select>
+    <button class="submit-btn">Sign In</button>
+  </form>
+</div>
