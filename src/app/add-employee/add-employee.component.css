@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-control {
+    margin: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    border-radius: 8px;
+  }
+  .title {
+    font-size: var(--title-font);
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  .input-field {
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  
+  .input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    height: 45px;
+    border: 1.5px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-size: large;
+    padding-left: 10px;
+  }
+  .input:focus {
+    border: 1.5px solid #2d79f3;
+  }
+  
+  .date input {
+    margin-top: 5px;
+  }
+  
+  select {
+    margin-bottom: 15px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    height: 45px;
+    border: 1.5px solid var(--main-color);
+    background: var(--secondary-color);
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-size: large;
+    padding-left: 10px;
+  }
+  
+  .submit-btn {
+    margin-top: 30px;
+    height: 55px;
+    background: var(--third-color);
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--main-color);
+    color: var(--third-color);
+  }
+  
