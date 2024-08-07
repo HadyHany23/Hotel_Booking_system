@@ -7,7 +7,7 @@ import { HotelsListService } from '../services/hotels-list.service';
   standalone: true,
   imports: [],
   templateUrl: './booking.component.html',
-  styleUrl: './booking.component.css'
+  styleUrl: './booking.component.css',
 })
 export class BookingComponent implements OnInit {
   hotlist: HotelsList[] = [];
