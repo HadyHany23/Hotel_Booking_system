@@ -70,28 +70,29 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 80%;
 }
 
 /* Small Screens */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     width: 750px;
   }
-}
+} */
 
 /* Medium Screens */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .container {
     width: 970px;
   }
-}
+} */
 
 /* Large Screens */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
-}
+} */
 
 /* End Global Rules */
 
