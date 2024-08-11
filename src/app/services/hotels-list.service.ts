@@ -28,14 +28,11 @@ export class HotelsListService {
     },
   ];
 
-
   private filteredData: HotelsList[] = [...this.hotlist];
 
   getItems(): HotelsList[] {
     return this.hotlist;
   }
-
-
 
   sortData(column: keyof HotelsList, ascending: boolean): HotelsList[] {
     return this.hotlist.sort((a, b) => {
@@ -49,7 +46,6 @@ export class HotelsListService {
     });
   }
 
-
   filterData(searchTerm: string): HotelsList[] {
     if (!searchTerm) {
       this.filteredData = [...this.hotlist];
@@ -62,7 +58,6 @@ export class HotelsListService {
     }
     return this.filteredData;
   }
-
 
   constructor() {}
 }
